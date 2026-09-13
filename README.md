@@ -1,14 +1,18 @@
-# Yellow-zone-Medium
+# Yellow Zone Medium
+موقع العملاء لمشروع Yellow Zone.
 
-موقع العملاء لمشروع Kayan Entertainment Factory.
-متصل بمشروع Supabase الجديد.
+## التشغيل
+افتح `index.html` مباشرة أو فعّله عبر GitHub Pages.
 
-## رفعه إلى GitHub
-```bash
-git clone https://github.com/bdrb49200-code/Yellow-zone-Medium.git
-cd Yellow-zone-Medium
-# انسخ الملفات هنا ثم:
-git add .
-git commit -m "Build professional customer site"
-git push origin main
-```
+## Supabase
+1. افتح `supabase-config.js`.
+2. ضع Publishable Key الخاص بمشروع Supabase.
+3. لا تضع service_role key في هذا الملف أو في أي ملف Frontend.
+
+الموقع يستخدم الجداول الموجودة في مشروع Supabase:
+- products
+- quote_requests
+- gallery
+- site_settings
+
+الصور الحالية تجريبية ويجب استبدالها بصور تملك Yellow Zone حق استخدامها قبل الإطلاق التجاري.

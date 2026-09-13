@@ -1,4 +1,12 @@
-document.querySelectorAll('[data-service]').forEach(a=>a.addEventListener('click',()=>{const s=document.getElementById('service');if(s)s.value=a.dataset.service;}));
-const images=document.querySelectorAll('.mosaic img');const lb=document.getElementById('lightbox');const big=lb?.querySelector('img');images.forEach(img=>img.addEventListener('click',()=>{big.src=img.src;big.alt=img.alt;lb.classList.add('open');lb.setAttribute('aria-hidden','false')}));
-if(lb){lb.querySelector('button').addEventListener('click',()=>{lb.classList.remove('open');lb.setAttribute('aria-hidden','true')});lb.addEventListener('click',e=>{if(e.target===lb){lb.classList.remove('open');lb.setAttribute('aria-hidden','true')}})}
-document.getElementById('bookingForm').addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('name').value.trim(),phone=document.getElementById('phone').value.trim(),service=document.getElementById('service').value,guests=document.getElementById('guests').value,date=document.getElementById('date').value||'غير محدد',notes=document.getElementById('notes').value.trim()||'لا توجد ملاحظات';const text=`السلام عليكم، أبغى أحجز في Yellow Zone%0Aالاسم: ${encodeURIComponent(name)}%0Aالجوال: ${encodeURIComponent(phone)}%0Aالخدمة: ${encodeURIComponent(service)}%0Aالعدد: ${encodeURIComponent(guests)}%0Aالتاريخ: ${encodeURIComponent(date)}%0Aملاحظات: ${encodeURIComponent(notes)}`;window.open(`https://wa.me/966554160210?text=${text}`,'_blank')});
+const form = document.getElementById("quoteForm");
+if (form) {
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const msg = document.getElementById("formMsg");
+    const data = Object.fromEntries(new FormData(form).entries());
+    if (!window.sb) { msg.textContent = "أضف Publishable Key في supabase-config.js أولًا."; return; }
+    const { error } = await sb.from("quote_requests").insert(data);
+    msg.textContent = error ? "تعذر إرسال الطلب. حاول مرة ثانية." : "تم استلام طلبك. الإدارة بتتابعه من النظام.";
+    if (!error) form.reset();
+  });
+}
