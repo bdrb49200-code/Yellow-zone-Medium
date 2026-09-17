@@ -1,132 +1,44 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Yellow Zone - عالم من اللعب والمرح والتجارب المميزة للأطفال والعائلات.">
-  <title>Yellow Zone | عالم اللعب</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>صُنّاع البسمة للترفيه | تجهيز ألعاب الأطفال وقطع الغيار</title>
+  <meta name="description" content="صُنّاع البسمة للترفيه في الرياض: تصميم وتجهيز صالات الألعاب الحركية وقطع الغيار وحلول الترفيه الآمنة للمشاريع في المملكة.">
+  <meta name="keywords" content="ألعاب أطفال, تجهيز ملاهي, قطع غيار ألعاب, سوفت بلاي, ترامبولين, زحاليق, الرياض">
+  <meta property="og:title" content="صُنّاع البسمة للترفيه"><meta property="og:description" content="نحوّل فكرتك إلى مشروع ترفيهي متكامل.">
+  <link rel="icon" href="assets/logo.jpg"><link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"صُنّاع البسمة للترفيه","address":{"@type":"PostalAddress","addressLocality":"الرياض","addressCountry":"SA"},"description":"تصميم وتجهيز الألعاب الحركية للأطفال وقطع الغيار"}</script>
 </head>
 <body>
-  <div class="topbar">تجارب أجمل • فعاليات ممتعة • أجواء مصممة للعائلة</div>
-
-  <header class="nav">
-    <a class="brand" href="index.html">
-      <span class="brand-mark">Y</span>
-      <span><b>YELLOW</b><small>ZONE</small></span>
-    </a>
-    <nav>
-      <a href="#home">الرئيسية</a>
-      <a href="#activities">التجارب</a>
-      <a href="#offers">العروض</a>
-      <a href="#gallery">الصور</a>
-      <a href="#contact">تواصل معنا</a>
-    </nav>
-    <div class="nav-actions">
-      <a class="ghost-btn" href="login.html">تسجيل الدخول</a>
-      <a class="main-btn" href="#offers">احجز تجربتك</a>
-    </div>
+  <div class="notice">توريد وتركيب داخل المملكة <span>•</span> دعم ما بعد البيع</div>
+  <header>
+    <a class="brand" href="#home"><img src="assets/logo.jpg" alt="شعار صُنّاع البسمة"><div><strong>صُنّاع البسمة</strong><small>SMILE MAKERS</small></div></a>
+    <form class="search" id="searchForm"><input id="search" type="search" placeholder="ابحث عن منتج أو قطعة غيار..." aria-label="البحث"><button>⌕</button></form>
+    <nav class="actions"><button id="accountBtn" title="الحساب">♙ <span>الحساب</span></button><button id="favBtn" title="المفضلة">♡ <span>المفضلة</span><b id="favCount">0</b></button><button id="cartBtn" title="السلة">▣ <span>السلة</span><b id="cartCount">0</b></button></nav>
   </header>
+  <nav class="mainnav"><button class="menuBtn" id="menuBtn">☰ الأقسام</button><a href="#products">قطع الغيار</a><a href="#services">خدماتنا</a><a href="#projects">أعمالنا</a><a href="#about">من نحن</a><a href="https://www.instagram.com/fun_maker2010" target="_blank" rel="noopener">إنستغرام</a></nav>
 
   <main id="home">
-    <section class="hero">
-      <div class="hero-copy">
-        <span class="eyebrow">YELLOW ZONE EXPERIENCE</span>
-        <h1>هنا تبدأ <span>اللحظة</span><br>اللي ما تنسى.</h1>
-        <p>مساحة مليانة لعب، حركة، إبداع وتجارب تجمع الأطفال والعائلة في يوم واحد مليان ذكريات.</p>
-        <div class="hero-buttons">
-          <a class="main-btn large" href="#activities">اكتشف التجارب</a>
-          <a class="outline-btn large" href="login.html">دخول العملاء</a>
-        </div>
-        <div class="trust-row">
-          <div><b>+20</b><span>تجربة ونشاط</span></div>
-          <div><b>100%</b><span>وقت ممتع</span></div>
-          <div><b>7/7</b><span>أيام مليانة حياة</span></div>
-        </div>
-      </div>
-      <div class="hero-art">
-        <div class="hero-orb orb-one"></div>
-        <div class="hero-orb orb-two"></div>
-        <div class="hero-card">
-          <img src="https://tripty-media.s3.amazonaws.com/public/9176/666088c89a80b_A10C2A58-75D6-4E7A-81BE-E568BDFB0691.jpeg" alt="منطقة ألعاب داخلية">
-          <div class="hero-card-label"><span>★</span><b>عيش التجربة</b><small>كل زيارة لها قصة</small></div>
-        </div>
-      </div>
+    <section class="hero"><img src="assets/hero.png" alt="صالة ألعاب داخلية متكاملة"><div class="heroShade"></div><div class="heroText"><span>من الفكرة حتى التشغيل</span><h1>نصنع مساحات<br>تُحرّك الخيال</h1><p>تصميم، تصنيع، تركيب وصيانة مشاريع الترفيه للأطفال بمعايير أمان عالية.</p><a href="#products">استكشف المنتجات ←</a></div></section>
+
+    <section class="pillars"><article><b>01</b><div><strong>تصميم 3D</strong><small>تصور كامل قبل التنفيذ</small></div></article><article><b>02</b><div><strong>تصنيع احترافي</strong><small>خامات آمنة وعالية الكثافة</small></div></article><article><b>03</b><div><strong>تركيب ودعم</strong><small>متابعة بعد التسليم</small></div></article></section>
+
+    <section class="shop" id="products">
+      <div class="sectionTitle"><div><span>كتالوج المنتجات</span><h2>قطع الغيار والتجهيزات</h2></div><div class="filters"><button class="active" data-cat="all">الكل</button><button data-cat="large">الألعاب الكبيرة</button><button data-cat="parts">قطع الغيار</button><button data-cat="safety">السلامة</button></div></div>
+      <div class="productGrid" id="productGrid"></div><div class="empty" id="empty">لا توجد منتجات مطابقة للبحث.</div>
     </section>
 
-    <section class="ticker">
-      <div>PLAY</div><span>✦</span><div>CREATE</div><span>✦</span><div>DISCOVER</div><span>✦</span><div>SMILE</div><span>✦</span><div>PLAY</div>
-    </section>
+    <section class="services" id="services"><div class="sectionTitle light"><div><span>حلول متكاملة</span><h2>نجهّز مشروعك بالكامل</h2></div></div><div class="serviceGrid"><article><i>⌂</i><h3>صالات ألعاب حركية</h3><p>توزيع مدروس للمساحة يجمع الحركة والأمان والربحية.</p></article><article><i>△</i><h3>تسلق وقفز وزحاليق</h3><p>تصنيع حسب المقاس والهوية البصرية للمشروع.</p></article><article><i>◎</i><h3>ترامبولين وسوفت بلاي</h3><p>مواد مقاومة للصدمات وشبك حماية وأرضيات آمنة.</p></article><article><i>✦</i><h3>ألعاب تعليمية وذكاء</h3><p>مناطق تعلم ممتعة للمدارس والحضانات.</p></article></div></section>
 
-    <section class="section" id="activities">
-      <div class="section-head">
-        <div><span class="eyebrow">WHAT'S INSIDE</span><h2>اختار مغامرتك</h2></div>
-        <p>من اللعب الحركي إلى الأنشطة الإبداعية، جهزنا التجربة عشان كل شخص يلقى الشيء اللي يناسبه.</p>
-      </div>
-      <div class="activity-grid">
-        <article class="activity-card tall">
-          <img src="https://cdn.cobone.com/deals/sau/207611/1.webp?v=31" alt="منطقة كرات وزحاليق">
-          <div class="shade"></div><div class="activity-content"><span>01</span><h3>سوفت بلاي</h3><p>تسلق، زحاليق، كرات ومغامرات في عالم مليان حركة.</p><a href="products.html">استكشف ←</a></div>
-        </article>
-        <article class="activity-card">
-          <img src="https://kidsplayspace.org/api/media/file/what-to-consider-when-selecting-indoor-playground-trampoline-equipment.webp" alt="ترامبولين">
-          <div class="shade"></div><div class="activity-content"><span>02</span><h3>ترامبولين</h3><p>اقفز، تحرك، وخل الطاقة تاخذ راحتها.</p><a href="products.html">استكشف ←</a></div>
-        </article>
-        <article class="activity-card">
-          <img src="https://aldeadidactica.cl/cdn/shop/files/ni-os-jugando-con-plazas-blandas_2048x.png?v=1762108167" alt="أنشطة أطفال">
-          <div class="shade"></div><div class="activity-content"><span>03</span><h3>منطقة الصغار</h3><p>مساحات لطيفة ومناسبة للتجربة واللعب الحر.</p><a href="products.html">استكشف ←</a></div>
-        </article>
-      </div>
-    </section>
+    <section class="projects" id="projects"><div class="sectionTitle"><div><span>انتشارنا</span><h2>من أعمال المؤسسة</h2></div></div><div class="locations"><article><h3>الرياض</h3><p>يلو زون • سي سو • أفاتار • مودي لاند • مدينة القفز • صُنّاع البسمة • هابي للترفيه</p></article><article><h3>المنطقة الغربية</h3><p>قفزة مرح – جدة • مدرسة رواء العالمية • مربع بسيط – مكة • الطفل الطائر – المدينة</p></article><article><h3>الجنوب والباحة</h3><p>Go Kidi • عالم الترامبولين • سمايل تاون • واحة المرح • هيا طفلي • مركز هوبا</p></article><article><h3>مناطق أخرى</h3><p>يلو للترفيه – حائل • لعبة وطفل – حفر الباطن • النجمة الصغيرة – الخبر • طفل وفرح – الدوادمي</p></article></div></section>
 
-    <section class="feature-banner">
-      <div><span class="eyebrow">YELLOW ZONE EVENTS</span><h2>مو بس زيارة...<br><em>خلّها فعالية.</em></h2><p>أعياد ميلاد، فعاليات، زيارات مدارس وتجارب جماعية بتفاصيل تقدر الإدارة تتحكم فيها من لوحة خاصة.</p><a class="main-btn" href="#contact">اطلب عرض</a></div>
-      <div class="floating-note"><b>MAKE<br>MEMORIES</b><span>✦</span></div>
-    </section>
-
-    <section class="section" id="offers">
-      <div class="section-head">
-        <div><span class="eyebrow">POPULAR PACKAGES</span><h2>اختياراتنا</h2></div>
-        <p>أسعار وتجارب قابلة للتعديل من لوحة الإدارة لاحقًا.</p>
-      </div>
-      <div class="packages">
-        <article class="package"><span class="tag">الأكثر طلبًا</span><h3>زيارة اللعب</h3><p>دخول + منطقة الألعاب الأساسية.</p><div class="price">من <b>35</b> <small>ر.س</small></div><a href="login.html" class="package-btn">احجز الآن</a></article>
-        <article class="package featured"><span class="tag">مميز</span><h3>يوم المغامرة</h3><p>دخول + أنشطة إضافية + تجربة خاصة.</p><div class="price">من <b>59</b> <small>ر.س</small></div><a href="login.html" class="package-btn">احجز الآن</a></article>
-        <article class="package"><span class="tag">للمجموعات</span><h3>فعالية خاصة</h3><p>مناسب للمدارس والمجموعات والاحتفالات.</p><div class="price">حسب الطلب</div><a href="#contact" class="package-btn">اطلب عرض</a></article>
-      </div>
-    </section>
-
-    <section class="gallery section" id="gallery">
-      <div class="section-head"><div><span class="eyebrow">GALLERY</span><h2>شوف الأجواء</h2></div><p>صور تجريبية مؤقتة، وتقدر الإدارة استبدالها من لوحة التحكم.</p></div>
-      <div class="gallery-grid">
-        <img src="https://tripty-media.s3.amazonaws.com/public/9169/666088c5078a4_9C0C0?x=1" onerror="this.src='https://tripty-media.s3.amazonaws.com/public/9169/666088c5078a4_9C0A-86FE6D6317CB.jpeg'" alt="ألعاب وحركة">
-        <img src="https://static.where-e.com/United_Arab_Emirates/Ready-Set-Go_384f250b186db61995ce9033d1c4f886.jpg" alt="ترامبولين">
-        <img src="https://bestonplayground.com/wp-content/uploads/2022/12/Indoor-Playground-Equipment-Installation-in-BishaSaudi-Arabia.jpg" alt="منطقة ألعاب داخلية">
-      </div>
-    </section>
-
-    <section class="contact section" id="contact">
-      <div class="contact-box">
-        <div><span class="eyebrow">LET'S TALK</span><h2>عندك فعالية؟<br><span>خلنا نرتبها.</span></h2><p>أرسل بياناتك، والنظام يحفظ الطلب عشان الإدارة تتابعه من لوحة التحكم.</p></div>
-        <form id="quoteForm">
-          <input name="name" required placeholder="الاسم">
-          <input name="phone" required placeholder="رقم الجوال">
-          <input name="email" type="email" placeholder="الإيميل">
-          <input name="company" placeholder="المدرسة / الشركة">
-          <textarea name="details" placeholder="وش تحتاج؟"></textarea>
-          <button class="main-btn" type="submit">إرسال الطلب</button>
-          <small id="formMsg"></small>
-        </form>
-      </div>
-    </section>
+    <section class="about" id="about"><div><span>من نحن</span><h2>نحوّل الأفكار إلى مشاريع ترفيهية ناجحة</h2><p>مصنع متخصص في تصميم وتجهيز الألعاب الحركية للأطفال. نخدم رواد الأعمال والمدارس والحضانات والمراكز التجارية في مختلف مناطق المملكة، بدءًا من دراسة الموقع والتصميم ثلاثي الأبعاد وحتى التصنيع والتركيب والدعم.</p><div class="standards"><b>EN 1176</b><b>ASTM</b><b>دعم ما بعد البيع</b></div></div><ol><li><b>01</b>دراسة الموقع والمساحة</li><li><b>02</b>تقديم تصور ثلاثي الأبعاد</li><li><b>03</b>التصنيع والتركيب</li><li><b>04</b>التسليم والمتابعة</li></ol></section>
   </main>
+  <footer><div class="brand footerBrand"><img src="assets/logo.jpg" alt=""><div><strong>صُنّاع البسمة</strong><small>الرياض، المملكة العربية السعودية</small></div></div><p>حلول ترفيه متكاملة بمعايير جودة وأمان.</p><a href="https://www.instagram.com/fun_maker2010" target="_blank" rel="noopener">تابع أعمالنا على إنستغرام</a></footer>
 
-  <footer><div class="brand"><span class="brand-mark">Y</span><span><b>YELLOW</b><small>ZONE</small></span></div><p>تجربة مصممة للضحكة القادمة.</p><span>© 2026 Yellow Zone</span></footer>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="supabase-config.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer"><div class="drawerHead"><h2>سلة الطلب</h2><button class="close">×</button></div><div id="cartItems"></div><div class="cartTotal"><span>الإجمالي التقديري</span><b id="total">0 ﷼</b></div><button class="primary" id="checkoutBtn">إرسال طلب عرض سعر</button></aside>
+  <div class="modal" id="authModal"><button class="close">×</button><div class="tabs"><button class="active" data-auth="login">تسجيل الدخول</button><button data-auth="signup">حساب جديد</button></div><h2 id="authTitle">مرحبًا بعودتك</h2><form id="authForm"><label>البريد الإلكتروني<input type="email" required placeholder="name@example.com"></label><label>كلمة المرور<input type="password" required minlength="8" placeholder="8 أحرف على الأقل"></label><button class="primary">متابعة</button><small>نسخة تجريبية: لن تُحفظ بيانات الدخول قبل ربط Supabase.</small></form></div>
+  <div class="modal orderModal" id="orderModal"><button class="close">×</button><h2>بيانات طلب عرض السعر</h2><p>سنراجع المنتجات ونتواصل معك لتأكيد الكميات والتجهيز.</p><form id="orderForm"><label>اسم المؤسسة<input name="company" required></label><label>اسم المسؤول<input name="name" required></label><label>رقم الهاتف<input name="phone" type="tel" required pattern="[0-9+ ]{9,15}"></label><label>البريد الإلكتروني<input name="email" type="email" required></label><label>المدينة<select name="city" required><option value="">اختر المدينة</option><option>الرياض</option><option>جدة</option><option>مكة المكرمة</option><option>المدينة المنورة</option><option>أخرى</option></select></label><label>ملاحظات<textarea name="notes" rows="3"></textarea></label><button class="primary">تأكيد الطلب التجريبي</button></form></div>
+  <div class="toast" id="toast"></div><script src="app.js"></script>
+</body></html>
