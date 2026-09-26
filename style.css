@@ -11,3 +11,47 @@
 #bottom{padding-bottom:env(safe-area-inset-bottom)}
 @media(max-width:950px){.footerGrid{grid-template-columns:1fr 1fr}.contactCards{grid-template-columns:1fr 1fr}}
 @media(max-width:650px){.footerGrid{grid-template-columns:1fr}.contactCards{grid-template-columns:1fr}.heroActions{flex-direction:column;align-items:stretch}.heroActions button,.heroQuickAction{width:100%;justify-content:center}.locationBadge{font-size:13px;padding:9px 12px}.whatsappFloat{bottom:calc(88px + env(safe-area-inset-bottom));right:12px;padding:12px 15px}.whatsappFloat .floatText{display:none}.footerActions{gap:8px}.footerAction,.contactLinks .social{width:100%;justify-content:center}}
+
+
+/* --- Polished brand/contact UI --- */
+.brandIcon{width:1.15em;height:1.15em;display:inline-grid;place-items:center;font-size:1.3em;line-height:1;vertical-align:-.08em;flex:0 0 auto}
+.social{margin:0!important;display:inline-flex!important;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:11px 16px!important;border:0!important;border-radius:13px!important;font-weight:700;box-shadow:0 5px 16px #00000012;transition:transform .16s ease,box-shadow .16s ease,filter .16s ease;color:#fff!important;background:#4b4453}
+.social:hover{transform:translateY(-2px);box-shadow:0 9px 22px #00000020;filter:brightness(1.03)}
+.social.instagram{background:linear-gradient(135deg,#833ab4,#c13584 42%,#e1306c 66%,#f77737 100%)}
+.social.facebook{background:#1877f2}
+.social.tiktok{background:#111;color:#fff!important}
+.social.youtube{background:#ff0000}
+.social.whatsapp{background:#25d366!important}
+.social.catalog{background:#6f2b7d!important;color:#fff!important}
+.social.website{background:#2f3b4a!important;color:#fff!important}
+.social.location{background:#e84b4b!important;color:#fff!important}
+.social.phone{background:#b98512!important;color:#fff!important}
+.social .brandIcon{font-size:1.22rem}
+.footerActions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.footerActions .social{min-width:132px}
+.footerGrid .social{box-shadow:none}
+.footerGrid .social.instagram{background:#fff;color:#c13584!important}
+.footerGrid .social.facebook{background:#fff;color:#1877f2!important}
+.footerGrid .social.tiktok{background:#fff;color:#111!important}
+.footerGrid .social.youtube{background:#fff;color:#ff0000!important}
+.footerGrid .social.whatsapp{background:#25d366!important;color:#fff!important}
+.footerGrid .social.catalog,.footerGrid .social.website,.footerGrid .social.location{background:#ffffff12!important;color:#fff!important;border:1px solid #ffffff2a!important}
+.contactLinks{display:grid!important;grid-template-columns:repeat(4,minmax(145px,1fr));gap:12px!important;margin-top:14px}
+.contactLinks .social{width:100%;min-width:0;min-height:58px;font-size:15px}
+.contactCards{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important}
+.contactCard{min-height:170px;justify-content:center;align-items:flex-start;border:1px solid #ece8ef!important;box-shadow:0 8px 24px #2c163b0c!important;transition:transform .16s ease,box-shadow .16s ease}
+.contactCard:hover{transform:translateY(-3px);box-shadow:0 14px 34px #2c163b18!important}
+.contactCardIcon{width:54px!important;height:54px!important;border-radius:15px!important;font-size:1.2rem}
+.contactCard.whatsapp{background:#fff!important;color:var(--ink)!important;border-color:#bceecb!important}
+.contactCard.whatsapp .contactCardIcon{background:#25d366!important;color:#fff!important}
+.contactCard.phone .contactCardIcon{background:#fff3cd!important;color:#9a6900!important}
+.contactCard.location .contactCardIcon{background:#ffe4e4!important;color:#d83a3a!important}
+.whatsappFloat{background:#25d366!important;color:#fff!important;border:0!important;box-shadow:0 12px 28px #128c4550!important}
+.whatsappFloat .brandIcon{font-size:1.45rem}
+.locationBadge.large{background:#fff0f0!important;color:#c63636!important;border-color:#ffd2d2!important}
+.locationBadge .brandIcon{font-size:1rem}
+.heroQuickAction.whatsapp{background:#25d366!important;color:#fff!important;border:0!important}
+.heroQuickAction.location{background:#fff!important;color:#7a2c80!important;border:0!important}
+.heroQuickAction .brandIcon{font-size:1.1rem}
+@media(max-width:950px){.contactLinks{grid-template-columns:repeat(3,minmax(140px,1fr))}}
+@media(max-width:650px){.contactLinks{grid-template-columns:repeat(2,minmax(0,1fr))}.contactLinks .social{min-height:52px;padding:10px 9px!important;font-size:13px}.contactCards{grid-template-columns:1fr!important}.contactCard{min-height:130px}.footerActions .social{width:auto!important;min-width:calc(50% - 6px);flex:1}.whatsappFloat{width:54px;height:54px;padding:0!important;justify-content:center;border-radius:50%!important}.whatsappFloat .floatText{display:none!important}}
