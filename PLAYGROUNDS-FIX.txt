@@ -1,0 +1,2 @@
+This customer package includes all 300 playground images.
+The database importer is idempotent and preserves existing products.
