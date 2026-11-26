@@ -1033,3 +1033,11 @@ body{
     font-size:12px!important;
   }
 }
+
+.card .add{
+  background:linear-gradient(90deg,#9b2ca6,#7f1c89)!important;
+  color:#fff!important;
+  border:0!important;
+  box-shadow:0 4px 10px rgba(127,28,137,.22)!important;
+}
+
