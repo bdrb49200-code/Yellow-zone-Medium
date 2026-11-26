@@ -826,3 +826,179 @@ body{
   }
 }
 
+
+
+/* ===== PRODUCT HOME REFRESH ===== */
+
+.sectionNav{
+  display:grid!important;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px!important;
+  padding:14px!important;
+  background:#fff!important;
+  border-radius:20px!important;
+  border:1px solid #ece3ee!important;
+}
+
+.sectionNav button{
+  min-height:64px!important;
+  border-radius:14px!important;
+  background:#fff!important;
+  border:1px solid #e7dce9!important;
+  color:#4f2854!important;
+  font-weight:800!important;
+}
+
+.homeMainChips{
+  display:grid!important;
+  grid-template-columns:repeat(2,1fr)!important;
+  gap:10px!important;
+}
+
+.homeMainChips .homeChip{
+  min-height:72px!important;
+  background:#fff!important;
+  border:1px solid #e5dae7!important;
+  border-radius:14px!important;
+  color:#432248!important;
+  font-weight:800!important;
+}
+
+.grid{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:18px!important;
+}
+
+.card{
+  padding:0!important;
+  overflow:hidden!important;
+  border-radius:15px!important;
+  background:#fff!important;
+  border:1px solid #e8e3ea!important;
+  box-shadow:0 5px 14px rgba(0,0,0,.07)!important;
+}
+
+.card .photo{
+  height:250px!important;
+  border-radius:0!important;
+  background:#fff!important;
+}
+
+.card .photo img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  padding:7px!important;
+}
+
+.card h3{
+  margin:10px 12px 4px!important;
+  min-height:52px!important;
+  font-size:15px!important;
+  line-height:1.6!important;
+  font-weight:800!important;
+}
+
+.card .priceStack,
+.card .productDimensionsInline,
+.card .hint,
+.card .unit{
+  margin-inline:12px!important;
+}
+
+.card .price{
+  font-size:21px!important;
+  color:#d28a00!important;
+  font-weight:900!important;
+}
+
+.card .requestPrice{
+  color:#74277d!important;
+}
+
+.card .add{
+  position:absolute!important;
+  top:218px!important;
+  inset-inline-start:12px!important;
+  width:46px!important;
+  height:46px!important;
+  min-width:46px!important;
+  padding:0!important;
+  border-radius:50%!important;
+  font-size:0!important;
+  background:#fff!important;
+  border:1px solid #ddd!important;
+  box-shadow:0 5px 12px rgba(0,0,0,.13)!important;
+}
+
+.card .add::before{
+  content:"🛍";
+  font-size:21px!important;
+}
+
+.heroQuickAction.whatsapp{
+  display:none!important;
+}
+
+@media(max-width:650px){
+
+  .sectionNav{
+    grid-template-columns:repeat(3,1fr)!important;
+    gap:8px!important;
+    padding:10px!important;
+  }
+
+  .sectionNav button{
+    min-height:58px!important;
+    font-size:13px!important;
+    padding:8px 4px!important;
+  }
+
+  .sectionNav button:nth-child(4){
+    grid-column:1/-1!important;
+  }
+
+  .homeMainChips{
+    grid-template-columns:repeat(2,1fr)!important;
+    gap:8px!important;
+  }
+
+  .homeMainChips .homeChip{
+    min-height:68px!important;
+    font-size:13px!important;
+  }
+
+  .grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:10px!important;
+  }
+
+  .card .photo{
+    height:185px!important;
+  }
+
+  .card h3{
+    font-size:13px!important;
+    min-height:62px!important;
+    margin-inline:9px!important;
+  }
+
+  .card .priceStack,
+  .card .productDimensionsInline,
+  .card .hint,
+  .card .unit{
+    margin-inline:9px!important;
+  }
+
+  .card .price{
+    font-size:18px!important;
+  }
+
+  .card .add{
+    top:160px!important;
+    inset-inline-start:9px!important;
+    width:42px!important;
+    height:42px!important;
+    min-width:42px!important;
+  }
+}
